@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularz</title>
+<link rel="stylesheet" type="text/css" href="style/arkusz.form.css">
+</head>
+<body>
+<div class="purple"></div>
+<div class="blue"></div>
+<div class="red">
+<a href="index.html"><img src="img/herb.jpg" style="width:90%; height:auto;"></a>
+</div>
+<div class="blue"></div>
+<div class="yellow">
+<h2>Formularz</h2>
+<form action="mailto:maciej.zielinski@tm1.edu.pl" method="POST">
+<label for="fname">Imię:</label><br>
+<input type="text" id="fname" name="fname" value="Jan"><br>
+  <br>
+<label for="lname">Nazwisko:</label><br>
+<input type="text" id="lname" name="lname" value="Kowalski">
+  
+<br><br><br>
+
+<input type="radio" id="male" name="gender" value="male" checked>
+  <label for="male">Mężczyzna</label><br> 
+<input type="radio" id="female" name="gender" value="female">
+  <label for="female">Kobieta</label><br>
+<input type="radio" id="other" name="gender" value="other">
+  <label for="other">Inna</label>
+
+  <br><br>
+Ile masz lat? <br>
+
+<input type="radio" id="16" name="age" value="16">
+  <label for="16"><16</label><br> 
+<input type="radio" id="17" name="age" value="17">
+  <label for="17">17-24</label><br>
+<input type="radio" id="25" name="age" value="25">
+  <label for="25">25-35</label><br>
+<input type="radio" id="36" name="age" value="36">
+  <label for="36">36-60</label><br>
+<input type="radio" id="60" name="age" value="60">
+  <label for="60">>60</label><br>
+
+  <br><br>
+
+  Które z wymienionych atrakcji turystycznych odwiedziłeś/odwiedziłaś?<br>
+
+<input type="checkbox" id="bigben" name="tried" value="44">
+  <label for="bigben">Big Ben</label><br>
+<input type="checkbox" id="londoneye" name="tried" value="doc">
+  <label for="londoneye">London Eye</label><br>
+<input type="checkbox" id="back" name="tried" value="xx"> 
+  <label for="back">Buckingham Palace</label><br>
+<input type="checkbox" id="nie" name="tried" value="red">
+  <label for="nie">Żadnej</label><br>
+
+  <br><br>Czy masz jakieś przemyślenia na temat miasta?<br>
+
+<label><textarea name="message" rows="12" cols="24">Napisz nam co o tym myślisz.</textarea></label><br><br>
+
+  <br><br>
+
+  <input type="reset" value="Wyczyść formularz">
+  <input type="submit" value="Wyślij formularz">
+  <br><br>
+</form>
+</div>
+</body>
+</html>

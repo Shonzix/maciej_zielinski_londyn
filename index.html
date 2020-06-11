@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<link rel="stylesheet" type="text/css" href="style/arkusz.css" >
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+</head>
+
+<body>
+
+<div class="green"></div>
+
+<div class="lightblue"></div>
+
+<div class="darkblue"></div>
+
+<div class="magenta"><img src="img/herb.jpg" style="width:90%; height:auto;"></div>
+
+<div class="red">LONDYN</div>
+
+<div class="blue"></div>
+
+<div class="orange"><a href="sport.html"><img src="img/sport.png" style="width:90%; height:auto;"></a><br><br><a href="formularz.html"><img src="img/formularz.png" style="width:90%; height:auto;"></a></div>
+
+<div class="blue"></div>
+
+<div class="purple"></div>
+
+<div class="brown"></div>
+
+<div class="yellow">
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Chelsea')" id="defaultOpen">Chelsea</button>
+  <button class="tablinks" onclick="openCity(event, 'Kings Cross')">Kings Cross</button>
+  <button class="tablinks" onclick="openCity(event, 'Westminster')">Westminster</button>
+</div>
+
+
+<div id="Chelsea" class="tabcontent">
+  <h3>Chelsea</h3>
+  <p>Chelsea słynie z zamożnych mieszkańców oraz kierowanych do nich eleganckich sklepów i restauracji. To   także centrum kultury miasta...<a href="https://pl.wikipedia.org/wiki/Chelsea_(Londyn)"     target=_blank>więcej</a></p>
+</div>
+
+<div id="Kings Cross" class="tabcontent">
+  <h3>Kings Cross</h3>
+  <p>King’s Cross jest głównym węzłem kolejowym z pociągami krajowymi na dworcu o tej samej nazwie i terminalem Eurostar na dworcu St. Pancras...<a href="https://www.google.com/search?sxsrf=ALeKk03mVtqW9oojW4dCAypZfLCzZVcGcA:1591711267901&q=Kings+Cross&stick=H4sIAAAAAAAAAONgFuLQz9U3MMkqyFECs_JS8sq1FLKTrfRz8pMTSzLz8_QLchKTU63yUjPTM5LyizLy81OKHzHWcgu8_HFPWKpk0pqT1xjzuAhqEXLjYnPNK8ksqRSS4uKRglurwSDFxQXnSSkocfE-Td0sJ1rY-Oa_lhBn6T3F9dwLbrgLztS6ejfKalqQFZMGE88iVm7vzLz0YgXnovziYgC_bzg5xgAAAA&sa=X&ved=2ahUKEwjs1NTF8vTpAhVLlosKHSzNB1UQ-BYwO3oECBoQbQ&biw=1920&bih=937" target=_blank>więcej</a></p>
+</div>
+
+<div id="Westminster" class="tabcontent">
+  <h3>Westminster</h3>
+  <p>Westminster to tętniąca życiem dzielnica rządowa położona w pobliżu Pałacu Buckingham...<a href="https://pl.wikipedia.org/wiki/Westminster" target=_blank>więcej</a></p>
+</div>
+<script type="text/javascript">
+function openCity(evt, cityName) {
+
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+<script type="text/javascript">
+
+var obrazki = new Array();
+obrazki[1] = "img/londyn1.jpg";
+obrazki[2] = "img/londyn2.jpg";
+obrazki[3] = "img/londyn3.jpg";
+obrazki[4] = "img/londyn4.jpg";
+
+var a = 1;
+ 
+function zmien()
+{
+	var ile = obrazki.length;
+	document.getElementById("obrazek").src = obrazki[a];	
+	a++;
+	if(ile==a) {
+		a=1;
+	} 
+ 
+}
+ 
+ 
+setInterval("zmien()", 5000);
+ 
+</script>
+
+<img src="img/londyn1.jpg" id="obrazek" style="width:75%; height:auto;">
+</div>
+
+<div class="purple"></div>
+
+<div class="cyan"><a href="mapa.html"><img src="img/minimapa.png" style="width:90%; height:auto;"></a></div>
+
+<div class="blue"></div>
+
+<div class="purple"></div>
+
+<div class="pink">Maciej Zieliński 2ta</div>
+</body>
+</html>
