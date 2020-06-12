@@ -70,6 +70,9 @@ body{
 	background-color:#B5B0AD;
 	text-align:center;
 	padding-top:2%;
+	position:fixed;
+	left:2%;
+	top:2%;
 	}
 .cyan{
 	width:20%;
